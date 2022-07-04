@@ -61,8 +61,7 @@ addEventListener(`change`, () => {
   //const value = select.value; => daca vreau si Value
   const desc = areaSelect.selectedOptions[0].text;
   const array0 = [areaSelect.selectedOptions[0].text]
+  
   console.log(desc , array0);
 });
 
-const array3 = [array0];
-console.log(array3);
