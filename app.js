@@ -1,76 +1,16 @@
-
-addEventListener(`change`, () => {
-  const areaSelect = document.querySelector("#Nume");
-  //const value = select.value; => daca vreau si Value
-  const desc = areaSelect.selectedOptions[0].text;
-  const array0 = [areaSelect.selectedOptions[0].text]
-  console.log(desc , array0);
+addEventListener(`change`, (e) => {
+  const select = e.target;
+  const desc = select.selectedOptions[0].text;
+  const array0 = [select.selectedOptions[0].text];
+  console.log(array0);
 });
 
-addEventListener(`change`, () => {
-  const areaSelect = document.querySelector("#Nume2");
-  //const value = select.value; => daca vreau si Value
-  const desc = areaSelect.selectedOptions[0].text;
-  const array0 = [areaSelect.selectedOptions[0].text]
-  console.log(desc , array0);
-});
+const arr = ["c", "a", "d"];
 
-addEventListener(`change`, () => {
-  const areaSelect = document.querySelector("#Nume3");
-  //const value = select.value; => daca vreau si Value
-  const desc = areaSelect.selectedOptions[0].text;
-  const array0 = [areaSelect.selectedOptions[0].text]
-  console.log(desc , array0);
-});
+function Random(arr, num) {
+  document.getElementById("Rezultatul").style.display = "block"; //insert text in div
 
-addEventListener(`change`, () => {
-  const areaSelect = document.querySelector("#Nume4");
-  //const value = select.value; => daca vreau si Value
-  const desc = areaSelect.selectedOptions[0].text;
-  const array0 = [areaSelect.selectedOptions[0].text]
-  console.log(desc , array0);
-});
+  const shuffled = [...arr].sort(() => 0.5 - Math.random()); // random mix
 
-addEventListener(`change`, () => {
-  const areaSelect = document.querySelector("#Nume5");
-  //const value = select.value; => daca vreau si Value
-  const desc = areaSelect.selectedOptions[0].text;
-  const array0 = [areaSelect.selectedOptions[0].text]
-  console.log(desc , array0);
-});
-
-addEventListener(`change`, () => {
-  const areaSelect = document.querySelector("#Nume6");
-  //const value = select.value; => daca vreau si Value
-  const desc = areaSelect.selectedOptions[0].text;
-  const array0 = [areaSelect.selectedOptions[0].text]
-  console.log(desc , array0);
-});
-
-addEventListener(`change`, () => {
-  const areaSelect = document.querySelector("#Nume7");
-  //const value = select.value; => daca vreau si Value
-  const desc = areaSelect.selectedOptions[0].text;
-  const array0 = [areaSelect.selectedOptions[0].text]
-  console.log(desc , array0);
-});
-
-
-addEventListener(`change`, () => {
-  const areaSelect = document.querySelector("#Nume8");
-  //const value = select.value; => daca vreau si Value
-  const desc = areaSelect.selectedOptions[0].text;
-  const array0 = [areaSelect.selectedOptions[0].text]
-  
-  console.log(desc , array0);
-});
-
-function random () {
-
-
+  return shuffled.slice(0, num);
 }
-
-function Result() {
-  document.getElementById("Rezultatul").style.display = "block";
-}
-
