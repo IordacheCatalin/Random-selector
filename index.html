@@ -24,7 +24,7 @@
       </div>
       <div class="row">
         <div class="col">
-          <label for="participanti">Selecteaza participantii !</label>
+          <label class="label" for="participanti">Selecteaza participantii !</label>
           <div class="col-12">
             <select class="form-select mt-1" id="Nume" name="Nume" required>
               <option selected>Please Select</option>
@@ -79,7 +79,7 @@
           </div>
         </div>
         <div class="col">
-          <label for="participanti">Selecteaza participantii !</label>
+          <label class="label" for="participanti">Selecteaza participantii !</label>
           <div class="col-12">
             <select class="form-select mt-1" id="Nume5" name="Nume" required>
               <option selected>Please Select</option>
@@ -134,11 +134,16 @@
           </div>
         </div>
       </div>
+      
+      <div id="Rezultatul" class="col-8 border border-success rounded-top rounded-bottom">Rezultatul corect al alegerilor este !</div>
+      
       <div class="col-12 d-flex justify-content-between">
-         <button type="button" class="button btn btn-primary btn-lg btn-block">Random Select !</button>
-         <button type="button" class="button btn btn-primary btn-lg btn-block">Save Result!</button>
-      </div>
+        <!-- <button type="button" class="button btn btn-primary btn-lg btn-block">Random Select !</button>
+         <button type="button" class="button btn btn-primary btn-lg btn-block">Save Result!</button> -->
+        <button class="button Btn_blue_normal" onclick="Result()" >Random Select !</button>
 
+        <button class="button Btn_white_normal">Save Result!</button>
+      </div>
     </div>
 
     <script

@@ -65,3 +65,12 @@ addEventListener(`change`, () => {
   console.log(desc , array0);
 });
 
+function random () {
+
+
+}
+
+function Result() {
+  document.getElementById("Rezultatul").style.display = "block";
+}
+
