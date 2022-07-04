@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="language" onChange="update()">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+        <option value="pt">Português</option>
+    </select>
+    <input type="text" id="value">
+    <input type="text" id="text">
+
+    <script type="text/javascript">
+        function update() {
+            var select = document.getElementById('language');
+            var option = select.options[select.selectedIndex];
+
+            document.getElementById('value').value = option.value;
+            document.getElementById('text').value = option.text;
+        }
+
+        update();
+    </script>
+</body>
+</html>
