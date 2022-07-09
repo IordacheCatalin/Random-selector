@@ -2,10 +2,10 @@ addEventListener(`change`, (e) => {
   const select = e.target;
   const desc = select.selectedOptions[0].text;
   const p = "Please Select";
- if (!arr.includes(desc) && !arr.includes(p) ) {
+  if (!arr.includes(desc) && !arr.includes(p)) {
     arr.push(desc);
   }
-  });
+});
 
 var arr = [];
 
@@ -15,7 +15,7 @@ function Random(arr, num) {
 
   const shuffled = [...arr].sort(() => 0.5 - Math.random()); // random mix
 
-  var x = shuffled.slice(0, num);
+  let x = shuffled.slice(0, num);
   document.getElementById("Rezultatul").innerHTML = x;
   makeTable(arr);
   return shuffled.slice(0, num);
